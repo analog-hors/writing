@@ -1,0 +1,59 @@
+body {
+    background-color: #312833;
+}
+
+#content {
+    max-width: 60rem;
+    margin: auto;
+    font-family: "Fira Sans", sans-serif;
+    color: #F9F5D7;
+}
+
+code {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    /* MinusKelvin */
+    font-variant-ligatures: none;
+    background-color: #1E1A21;
+}
+
+pre > code {
+    background-color: unset;
+}
+
+pre {
+    padding-left: 1em;
+    padding-right: 1em;
+    overflow-x: scroll;
+    scrollbar-color: #F4C8F9 #1E1A21;
+    scrollbar-width: thin;
+}
+
+/* Thanks, Chrome */
+@supports not ((scrollbar-color: #F4C8F9 #1E1A21) and (scrollbar-width: thin)) {
+    ::-webkit-scrollbar {
+        background-color: #1E1A21;
+        width: 5px;
+        height: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #F4C8F9;
+        border-radius: 2px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #C7A1CB;
+    }
+    
+    ::-webkit-scrollbar-thumb:active {
+        background-color: #785B7B;
+    }
+}
+
+a {
+    color: #70D5E0;
+}
+
+a:hover {
+    color: #AAEBE8;
+}
