@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 h() {
     printf "$@"
 }
@@ -10,7 +12,7 @@ render() {
     h         '<meta charset="utf-8">'
     h         '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
     h         "<title>$title</title>"
-    h         '<link href="index.css" rel="stylesheet"></link>'
+    h         '<link href="../shared/base.css" rel="stylesheet"></link>'
     h         '<link rel="preconnect" href="https://fonts.googleapis.com">'
     h         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
     h         '<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=JetBrains+Mono&display=swap" rel="stylesheet">'
